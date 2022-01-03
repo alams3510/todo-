@@ -24,6 +24,14 @@ addbtn.addEventListener('click', function () {
     show();
 
 })
+// adding text on pressing on enter
+input.addEventListener('keyup', function (event) {
+    if(event.keyCode === 13){
+     event.preventDefault();
+     addbtn.click();
+    }
+
+})
 
 // updating the list on the screen
 
@@ -106,4 +114,6 @@ delall.addEventListener("click",function(){
     addbtn.style.display="inline";
 show();
 })
+
+
 
