@@ -124,10 +124,58 @@ ul li{
     background: rgb(216, 211, 211);
     margin-bottom: 10px;
 }
-/* .index{
-    margin-right: 10px;
-    margin-left: 5px;
+
+
+/* responsiveness starts here */
+
+@media only screen and (max-width: 755px) {
+    #box button {
+        margin: 3px;
+        width: 3.5rem;
+        height: 2.5rem;
+        border: none;
+        color: white;
+        border-radius: 5px;
+        font-size: 12px;
+        padding: 5px;
+    }
+    #box input {
+        background-color: white;
+        margin: 25px 10% 5px 5%;
+        width: 80%;
+        height: 35px;
+        text-align: center;
+        font-size: 18px;
+        border: none;
+        border-radius: 5px;
+        transition: .5s;
+    }
+    h1{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 18;
+    }
+    #nav input {
+        display: inline-block;
+        width: 30%;
+        height: 60%;
+        margin: 0.5rem 2rem;
+        border-radius: 4px;
+        border: none;
+        outline: none;
+        text-align: center;
+    }
+    #nav h3 {
+        margin: 0.8rem auto 0.5rem auto;
+    }
+    ul li {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        list-style-type: none;
+        background: rgb(216, 211, 211);
+        margin-bottom: 10px;
+        width: 100%;
+    }
 }
-.dele{
-    margin-left: 90%;
-} */
