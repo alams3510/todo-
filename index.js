@@ -125,12 +125,12 @@ function myinput() {
     let list = mainlist.querySelectorAll("li");
     console.log(search)
 
- list.forEach((item,index) => {
+    list.forEach((item, index) => {
         let a = list[index].querySelectorAll("span")[1].innerText.toUpperCase();
-        if (a.indexOf(search)>-1) {
-             list[index].style.display = '';
+        if (a.indexOf(search) > -1) {
+            list[index].style.display = '';
         } else {
-             list[index].style.display = "none";
+            list[index].style.display = "none";
         }
-})
+    })
 }

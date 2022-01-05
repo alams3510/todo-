@@ -9,7 +9,23 @@ body{
 
 }
 h1{
+    font-size: 50px;
     color: white;
+    text-shadow: 2px 2px 5px red;
+    animation-duration: 5s;
+  animation-name: slidein;
+}
+/* sliding animtion here */
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 100%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
 }
 #nav {
     height: 3rem;
@@ -62,18 +78,26 @@ background-color: rgb(218, 210, 210);
     border: none;
     color: white;
     border-radius: 5px;
+    box-shadow: 3px 5px rgb(93, 93, 95);
 }
 #box button:hover{
     color: rgb(17, 4, 4);
-    background-color: rgb(243, 126, 181);
-    transition: .1s;
+    background-color: pink;
+    transition: .2s;
     cursor: pointer;
 }
 button:hover{
     color: black;
+    height: 27px;
     background-color: rgb(241, 167, 93);
     transition: .3s;
     cursor: pointer;
+    border: 2px solid black;
+
+}
+button:active{
+    transform: translateY(4px);
+    box-shadow: 2px 3px #666;
 }
 #add{
     background-color: green;
